@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+	<head>
+		<title>
+			
+		</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<style>
+			section button i:hover{
+				background-color:white;
+				border-radius:100%;
+			}
+		</style>
+	</head>
+	<body class="relative w-[100%] m-[0%]">
+		<section id="slider" class="absolute w-[60%] left-[20%] right-[20%] h-[10cm] mt-[5%] rounded-[30px] overflow-x-hidden">
+			<section class="flex" id="imgs">
+			
+				<img id="img" class="absolute h-[10cm] w-[100%]  rounded-tl-[30px] rounded-br-[30px]" src="Image/img7.png"/>
+				
+			</section>
+			<section class="absolute top-[90%] w-[26%] left-[37%] right-[37%] text-[20px] text-[white] flex justify-between">
+				<button class="absolute left-[0%]" onclick="a()"  class="text-[40px]>
+					<span">
+						<i class="ri-circle-line"></i>
+					</span>
+				</button>
+				<button class="absolute left-[20%]" onclick="b()" class="text-[40px]">
+					<span>
+						<!-- <i class="ri-circle-fill"></i> -->
+						<i class="ri-circle-line"></i>
+					</span>
+				</button>
+				<button class="absolute left-[40%]" onclick="c()" class="text-[40px]">
+					<span>
+						<i class="ri-circle-line"></i>
+					</span>
+				</button>
+				<button class="absolute left-[60%]" onclick="d()" class="text-[40px]">
+					<span>
+						<i class="ri-circle-line"></i>
+					</span>
+				</button>
+				<button class="absolute left-[80%]" onclick="e()" class="text-[40px]">
+					<span>
+						<i class="ri-circle-line"></i>
+					</span>
+				</button>
+				<button class="absolute left-[100%]" onclick="f()" class="text-[40px]">
+					<span>
+						<i class="ri-circle-line"></i>
+					</span>
+				</button>
+			</section>
+		</section>
+		
+		<script>
+			function a(){
+				document.getElementById('img').src='Image/img2.png'
+			}
+			function b(){
+				document.getElementById('img').src='Image/img3.png'
+			}
+			function c(){
+				document.getElementById('img').src='Image/img1.png'
+			}
+			function d(){
+				document.getElementById('img').src='Image/img4.png'
+			}
+			function e(){
+				document.getElementById('img').src='Image/img5.png'
+			}
+			function f(){
+				document.getElementById('img').src='Image/img6.png'
+			}
+		</script>
+	</body>
+</html>
